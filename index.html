@@ -1,60 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>XL714 GitHub Pages Projects</title>
+  <title>XL714 GitHub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
       font-family: Arial, sans-serif;
-      max-width: 700px;
+      max-width: 800px;
       margin: 40px auto;
       padding: 0 20px;
-      background-color: #f9f9f9;
-      color: #333;
+      background: #f8f8f8;
+      color: #232323;
     }
-
     h1 {
       text-align: center;
-      font-size: 2em;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 0.5em;
-      margin-bottom: 1.5em;
+      font-size: 2.2em;
+      margin-top: 1em;
+      margin-bottom: 1.2em;
+      border-bottom: 1px solid #bbb;
+      padding-bottom: 0.4em;
     }
-
-    ul {
-      list-style-type: none;
-      padding: 0;
+    h1 sub {
+      font-size: 0.45em;
+      color: #666;
+      font-weight: normal;
     }
-
-    li {
-      margin: 1em 0;
-      padding: 1em;
+    h2 {
+      margin-top: 2.2em;
+      font-size: 1.3em;
+      color: #222;
+      border-left: 4px solid #4a90e2;
+      padding-left: 0.5em;
+      margin-bottom: 1em;
+    }
+    ul, ol {
+      padding-left: 1.2em;
+    }
+    .gist-list {
+      margin-top: 1.5em;
+    }
+    .gist {
       background: #fff;
-      border: 1px solid #ddd;
-      border-radius: 6px;
-      transition: background 0.2s ease;
+      border: 1px solid #e0e0e0;
+      border-radius: 5px;
+      margin-bottom: 1.1em;
+      padding: 1em 1.1em;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.04);
     }
-
-    li:hover {
-      background: #f0f0f0;
-    }
-
-    a {
-      text-decoration: none;
-      color: #0066cc;
+    .gist-title {
       font-weight: bold;
+      color: #0057b7;
+      font-size: 1.06em;
+      text-decoration: none;
     }
-
+    .gist-desc {
+      margin: 0.2em 0 0.5em 0;
+      color: #444;
+    }
+    .gist-files {
+      font-size: 0.95em;
+      color: #777;
+      margin-top: 0.4em;
+    }
+    a {
+      color: #0057b7;
+      text-decoration: none;
+    }
     a:hover {
       text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      body { max-width: 100%; padding: 0 5px; }
+      h1 { font-size: 1.25em; }
     }
   </style>
 </head>
 <body>
-  <h1>XL714 <sub>(Xavier Langlois - 1980 Maroc)</sub> GitHub Pages Projects</h1>
+  <h1>XL714 <sub>(Xavier Langlois - 1980 Maroc)</sub> GitHub</h1>
+
+  <h2>1/ Mes GitHub Pages</h2>
   <ul>
-    <li><a href="https://xl714.github.io/thai-alphabet-song/">Thai Alphabet Song</a></li>
-    <li><a href="https://xl714.github.io/ascii-table/">ASCII/JSON Table manager</a></li>
+    <li><a href="https://xl714.github.io/ascii-table/" target="_blank">ascii-table</a></li>
+    <li><a href="https://xl714.github.io/capital-investments-and-yields/" target="_blank">capital-investments-and-yields</a></li>
+    <li><a href="https://xl714.github.io/tennis-de-table-feuille-de-matchs-xml-convertisseur/" target="_blank">tennis-de-table-feuille-de-matchs-xml-convertisseur</a></li>
+    <li><a href="https://xl714.github.io/thai-alphabet-song/" target="_blank">thai-alphabet-song</a></li>
   </ul>
+
+  <h2>2/ Mes Gists</h2>
+  <div class="gist-list">
+    <div class="gist">
+      <a class="gist-title" href="https://gist.github.com/xl714/a4b6357342965da666564260fe016339" target="_blank">
+        ImagesToPDF.sh
+      </a>
+      <div class="gist-desc">This script create a big PDF of all the images in the current directory, sorted by name, each image will be a page of the PDF - Need imagemagick with pdf read rights</div>
+      <div class="gist-files">Fichier : ImagesToPDF.sh</div>
+    </div>
+    <div class="gist">
+      <a class="gist-title" href="https://gist.github.com/xl714/6331debf0bde3d541318423fb188a3dc" target="_blank">
+        WinImagesToPDF.sh, convert_images_to_pdf.bat
+      </a>
+      <div class="gist-desc">This is a Windows version of ImagesToPDF.sh</div>
+      <div class="gist-files">Fichiers : WinImagesToPDF.sh, convert_images_to_pdf.bat</div>
+    </div>
+    <div class="gist">
+      <a class="gist-title" href="https://gist.github.com/xl714/bda5820be712412a996b1be58e952696" target="_blank">
+        rust-reduce-images-weight.rs
+      </a>
+      <div class="gist-desc">Reduce the weight of all the images in the current directory</div>
+      <div class="gist-files">Fichier : rust-reduce-images-weight.rs</div>
+    </div>
+    <div class="gist">
+      <a class="gist-title" href="https://gist.github.com/xl714/2c40c948bdccdaca3f219769d42f15dd" target="_blank">
+        clean_movies_download_dir.py
+      </a>
+      <div class="gist-desc"></div>
+      <div class="gist-files">Fichier : clean_movies_download_dir.py</div>
+    </div>
+    <div class="gist">
+      <a class="gist-title" href="https://gist.github.com/xl714/240c272420fc32fb438cf7ae19341aed" target="_blank">
+        prismjs_with_keep-tags_and_attributes_possible.html
+      </a>
+      <div class="gist-desc">Prism keep tags and tags attributes</div>
+      <div class="gist-files">Fichier : prismjs_with_keep-tags_and_attributes_possible.html</div>
+    </div>
+    <div class="gist">
+      <a class="gist-title" href="https://gist.github.com/xl714/ebf7846af24745968d310b2337d6c9e7" target="_blank">
+        underscore_from_json_to_different_templates_like_xml_or_html.html
+      </a>
+      <div class="gist-desc">JavaScript Templating Example to show rendering techniques of JS data in HTML or XML formats.</div>
+      <div class="gist-files">Fichier : underscore_from_json_to_different_templates_like_xml_or_html.html</div>
+    </div>
+    <div class="gist">
+      <a class="gist-title" href="https://gist.github.com/xl714/508b6d9e5cf468d2786b39906906fe48" target="_blank">
+        xl714-awsome-python-print-function-with-auto-padding.py
+      </a>
+      <div class="gist-desc">Python debug print function with auto padding by indentation</div>
+      <div class="gist-files">Fichier : xl714-awsome-python-print-function-with-auto-padding.py</div>
+    </div>
+    <div class="gist">
+      <a class="gist-title" href="https://gist.github.com/xl714/88d33f4c5ff1558300f6e34e616ed186" target="_blank">
+        airflow-python3.sh
+      </a>
+      <div class="gist-desc">Installing Airflow with CeleryExcuter, using PostgreSQL as metadata database and Redis for Celery message broker</div>
+      <div class="gist-files">Fichier : airflow-python3.sh</div>
+    </div>
+  </div>
 </body>
 </html>
